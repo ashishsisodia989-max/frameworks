@@ -1,22 +1,21 @@
-
+// swift-tools-version:6.1
 import PackageDescription
 
 let package = Package(
     name: "sharedFramework",
     platforms: [
-        .iOS(.v13) // Minimum iOS version supported by your framework
+        .iOS(.v13)
     ],
     products: [
         .library(
-            name: "ComposeApp",  // Matches the Kotlin framework baseName
+            name: "ComposeApp",
             targets: ["ComposeApp"]
         )
     ],
     targets: [
-        // This is the binary XCFramework built by your Gradle KMM project
         .binaryTarget(
             name: "ComposeApp",
-            path: "./xcframework/RELEASE/ComposeApp.xcframework" // Adjust RELEASE or DEBUG here based on buildType
+            path: "./xcframework/RELEASE/ComposeApp.xcframework"
         )
     ]
 )
