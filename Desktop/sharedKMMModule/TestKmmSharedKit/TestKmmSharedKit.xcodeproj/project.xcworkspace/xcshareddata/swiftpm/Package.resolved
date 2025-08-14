@@ -1,0 +1,15 @@
+{
+  "originHash" : "b05314fb6f5dbfff19185fe1ef164912a9ed649655f7e3d169937098be327ac1",
+  "pins" : [
+    {
+      "identity" : "kmmsharedkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ashishsisodia989-max/KMMSharedKit.git",
+      "state" : {
+        "revision" : "5728598297f08949f51b7e38b14b02c583192822",
+        "version" : "1.0.3"
+      }
+    }
+  ],
+  "version" : 3
+}
